@@ -1,95 +1,62 @@
+
 {
 	"user": {
 		"username": "yourosxshortname",
 		"full_name": "Joe Q. User",
 		"email": "joe.user@example.com"
 	},
-    "apple": {
-        "dotmac": {
-            "username": "yourdotmacname",
-            "idisk": {
-                "enable_mirroring": true 
-            } 
-        },
-        "menubar": {
-            "items": [
-                "VPN",
-                "RemoteDesktop",
-                "Sync",
-                "Keychain",
-                "Bluetooth",
-                "AirPort",
-                "Volume",
-                "Battery",
-                "Clock" 
-            ] 
-        },
-        "finder": {
-            "preferences": {
-                "ShowHardDrivesOnDesktop": 0,
-                "ShowExternalHardDrivesOnDesktop": 0 
-            } 
-        },
-        "dock": {
-            "preferences": {
-                "persistent-apps": "()",
-                "autohide": 1,
-                "workspaces": 1 
-            } 
-        },
-        "screensaver": {
-            "selected": "Arabesque",
-            "preferences": {
-                "askForPassword": 1,
-                "askForPasswordDelay": 600,
-                "idleTime": {
-                    "currentHost": 900 
-                },
-                "showClock": {
-                    "currentHost": 1 
-                },
-                "tokenRemovalAction": {
-                    "currentHost": 0 
-                } 
-            } 
-        },
-        "terminal": {
-            "preferences": {
-                "SecureKeyboardEntry": "1",
-                "Default Window Settings": "Pro",
-                "Startup Window Settings": "Pro" 
-            } 
-        },
-        "TimeMachine" : {
-            "DoNotOfferNewDisksForBackup": true 
-        },
-        "mail": {
-            "DisableDataDetectors": false 
-        } 
-    }
-    "run_list": [
-        "sudo::nopasswd",
-		"brewstrap",
-		"locate",
-        "git",
-        "github",
-        "brewstrap::development",
-        "apple::dotmac",
-        "apple::remove_sample_files",
-        "apple::menubar",
-        "apple::preferences",
-		"apple::safari",
-		"apple::screen_sharing",
-		"apple::server_admin_tools",
-        "bash::hushlogin",
-        "bash::rc",
-		"caffeine",
-		"firefox",
-		"chrome",
-		"fonts::inconsolata",
-		"flash_player",
-		"alfred",
-		"macvim",
-		"tmux"
-    ] 
+	"apple": {
+		"dotmac": {
+			"username": "yourdotmacname",
+			"idisk": {
+				"enable_mirroring": true
+			}
+		},
+		"menubar": {
+			"items": ["VPN", "RemoteDesktop", "Sync", "Keychain", "Bluetooth", "AirPort", "Volume", "Battery", "Clock"]
+		},
+		"finder": {
+			"preferences": {
+				"ShowHardDrivesOnDesktop": 0,
+				"ShowExternalHardDrivesOnDesktop": 0
+			}
+		},
+		"dock": {
+			"preferences": {
+				"persistent-apps": "()",
+				"autohide": 1,
+				"workspaces": 1
+			}
+		},
+		"screensaver": {
+			"selected": "Arabesque",
+			"preferences": {
+				"askForPassword": 1,
+				"askForPasswordDelay": 600,
+				"idleTime": {
+					"currentHost": 900
+				},
+				"showClock": {
+					"currentHost": 1
+				},
+				"tokenRemovalAction": {
+					"currentHost": 0
+				}
+			}
+		},
+		"terminal": {
+			"preferences": {
+				"SecureKeyboardEntry": "1",
+				"Default Window Settings": "Pro",
+				"Startup Window Settings": "Pro"
+			}
+		},
+		"TimeMachine": {
+			"DoNotOfferNewDisksForBackup": true
+		},
+		"mail": {
+			"DisableDataDetectors": false
+		}
+	},
+	"run_list": ["sudo::nopasswd", "brewstrap", "locate", "git", "github", "brewstrap::development", "apple::dotmac", "apple::remove_sample_files", "apple::menubar", "apple::preferences", "apple::safari", "apple::screen_sharing", "apple::server_admin_tools", "bash::hushlogin", "bash::rc", "caffeine", "firefox", "chrome", "fonts::inconsolata", "flash_player", "alfred", "macvim", "tmux"]
 }
